@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "923680514860",
+    "firebase_url": "https://fujiyama-fba7f.firebaseio.com",
+    "project_id": "fujiyama-fba7f",
+    "storage_bucket": "fujiyama-fba7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923680514860:android:4af8337d41069b366ac289",
+        "android_client_info": {
+          "package_name": "kh.edu.itc.gic.fujiyama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923680514860-ijvtgcodjia87b3h8ut7pmqp0u75agdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZrNrwGxlfvkYT6I8Xmr-M7hwua58DCBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923680514860-ijvtgcodjia87b3h8ut7pmqp0u75agdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
