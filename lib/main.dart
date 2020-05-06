@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fujiyama/screens/splash_screen.dart';
+import 'file:///E:/Project%20Flutter/FujiyamaMobileApp/fujiyama/lib/shared/splash_screen.dart';
 import 'package:fujiyama/shared/wrapper.dart';
 import 'package:provider/provider.dart';
 import 'models/user.dart';
-import 'screens/home/home.dart';
+import 'screens/home.dart';
 import 'services/auth.dart';
 
 void main() => runApp(MyApp());

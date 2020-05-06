@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'file:///E:/Project%20Flutter/FujiyamaMobileApp/fujiyama/lib/screens/play_screen.dart';
+import 'file:///E:/Project%20Flutter/FujiyamaMobileApp/fujiyama/lib/screens/status_screen.dart';
 import 'package:fujiyama/services/auth.dart';
 
 import 'course_screen.dart';
@@ -40,9 +42,9 @@ class _HomeState extends State<Home> {
                 Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/splashScreen.png"),
-                        fit: BoxFit.fitWidth,
-                        ),
+                      image: AssetImage("assets/images/splashScreen.png"),
+                      fit: BoxFit.fitWidth,
+                    ),
                   ),
                 ),
                 Container(
@@ -54,13 +56,32 @@ class _HomeState extends State<Home> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           GestureDetector(
-                            onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => CourseScreen()));
-                            },
-                            child: _myStyle(context, "COURSE", Colors.red, Colors.red)
-                          ),
-                          _myStyle(context, "STATUS", Colors.brown, Colors.brown),
-                          _myStyle(context, "PLAY", Colors.red, Colors.red)
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => CourseScreen()));
+                              },
+                              child: _myStyle(
+                                  context, "COURSE", Colors.red, Colors.red)),
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => StatusScreen()));
+                              },
+                              child: _myStyle(context, "STATUS", Colors.brown,
+                                  Colors.brown)),
+                          GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PlayScreen()));
+                              },
+                              child: _myStyle(
+                                  context, "Play", Colors.red, Colors.red)),
                         ],
                       )
                     ],
@@ -80,8 +101,8 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
     alignment: Alignment.center,
     children: <Widget>[
       Container(
-        height: MediaQuery.of(context).size.height/6,
-        width: MediaQuery.of(context).size.width/3,
+        height: MediaQuery.of(context).size.height / 6,
+        width: MediaQuery.of(context).size.width / 3,
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
           color: color1,
@@ -94,8 +115,8 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
             children: <Widget>[
               Container(
                 alignment: Alignment.bottomCenter,
-                height: MediaQuery.of(context).size.height/9,
-                width: MediaQuery.of(context).size.width/5,
+                height: MediaQuery.of(context).size.height / 9,
+                width: MediaQuery.of(context).size.width / 5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.white,
@@ -103,8 +124,8 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
               ),
               Container(
                 alignment: Alignment.bottomCenter,
-                height: MediaQuery.of(context).size.height/9,
-                width: MediaQuery.of(context).size.width/6,
+                height: MediaQuery.of(context).size.height / 9,
+                width: MediaQuery.of(context).size.width / 6,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: color2,
@@ -115,7 +136,10 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
           SizedBox(
             height: 5,
           ),
-          Text(text, style: TextStyle(color: Colors.white),),
+          Text(
+            text,
+            style: TextStyle(color: Colors.white),
+          ),
         ],
       ),
     ],
