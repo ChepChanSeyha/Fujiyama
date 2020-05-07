@@ -31,18 +31,17 @@ class _CourseState extends State<Course> {
                   fontSize: 38),
             ),
           ),
-//          Center(
-//            child: Stack(
-//              children: <Widget>[
-//                Container(
-//                  height: MediaQuery.of(context).size.width/2,
-//                  width: MediaQuery.of(context).size.width/2,
-//                  color: Colors.white,
-//                ),
-//                Image.asset("assets/images/img_study_test.png", height: 100, width: 100, scale: 1.0,),
-//              ],
-//            ),
-//          ),
+          Center(
+            child: Container(
+              height: MediaQuery.of(context).size.width * 0.65,
+              width: MediaQuery.of(context).size.width * 0.65,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle
+              ),
+              child: Image.asset("assets/images/img_study_test.png", scale: 1.8,),
+            ),
+          ),
           Positioned(
             width: MediaQuery.of(context).size.width,
             top: MediaQuery.of(context).size.height * 0.9,
