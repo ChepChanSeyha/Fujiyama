@@ -66,9 +66,21 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: SegoePrint
+    - family: arial
       fonts:
-        - asset: assets/fonts/SegoePrint.ttf
+        - asset: assets/fonts/arial.ttf
+    - family: din-bold
+      fonts:
+        - asset: assets/fonts/din-bold.ttf
+    - family: Japanese
+      fonts:
+          - asset: assets/fonts/Japanese.ttf
+    - family: Marker-Felt
+      fonts:
+        - asset: assets/fonts/Marker-Felt.ttf
+    - family: Prototype
+      fonts:
+        - asset: assets/fonts/Prototype.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

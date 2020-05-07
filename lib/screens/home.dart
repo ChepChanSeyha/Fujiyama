@@ -17,33 +17,34 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Home'),
-        actions: <Widget>[
-          FlatButton.icon(
-              onPressed: () async {
-                await _auth.signOut();
-              },
-              icon: Icon(
-                Icons.person,
-                color: Colors.white,
-              ),
-              label: Text(
-                'Logout',
-                style: TextStyle(color: Colors.white),
-              ))
-        ],
-      ),
+//      appBar: AppBar(
+//        title: Text('Home'),
+//        actions: <Widget>[
+//          FlatButton.icon(
+//              onPressed: () async {
+//                await _auth.signOut();
+//              },
+//              icon: Icon(
+//                Icons.person,
+//                color: Colors.white,
+//              ),
+//              label: Text(
+//                'Logout',
+//                style: TextStyle(color: Colors.white),
+//              ))
+//        ],
+//      ),
       body: Column(
         children: <Widget>[
           Expanded(
             child: Stack(
               children: <Widget>[
                 Container(
+                  height: MediaQuery.of(context).size.height * 1,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/images/splashScreen.png"),
-                      fit: BoxFit.fitWidth,
+                      image: AssetImage("assets/images/main_background1.png"),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
@@ -101,7 +102,7 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
     alignment: Alignment.center,
     children: <Widget>[
       Container(
-        height: MediaQuery.of(context).size.height / 6,
+        height: MediaQuery.of(context).size.height / 5,
         width: MediaQuery.of(context).size.width / 3,
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
@@ -115,8 +116,8 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
             children: <Widget>[
               Container(
                 alignment: Alignment.bottomCenter,
-                height: MediaQuery.of(context).size.height / 9,
-                width: MediaQuery.of(context).size.width / 5,
+                height: MediaQuery.of(context).size.height / 8.5,
+                width: MediaQuery.of(context).size.width / 4,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.white,
@@ -134,7 +135,7 @@ Widget _myStyle(BuildContext context, String text, Color color1, Color color2) {
             ],
           ),
           SizedBox(
-            height: 5,
+            height: 10,
           ),
           Text(
             text,

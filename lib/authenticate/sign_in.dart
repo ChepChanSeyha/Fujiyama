@@ -121,8 +121,7 @@ class _SignInState extends State<SignIn> {
                                             _obscureText
                                                 ? Icons.visibility_off
                                                 : Icons.visibility,
-                                            semanticLabel:
-                                            _obscureText
+                                            semanticLabel: _obscureText
                                                 ? 'show password'
                                                 : 'hide password',
                                           ),
@@ -132,6 +131,7 @@ class _SignInState extends State<SignIn> {
                                         contentPadding:
                                         EdgeInsets.all(15),
                                       ),
+                                      obscureText: _obscureText,
                                       onChanged: (val) {
                                         setState(
                                                 () => password = val);
